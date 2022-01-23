@@ -20,9 +20,10 @@ mensagem.addEventListener('keypress', function(e){
 // Função para criptografar texto
 
 function criptografa(mensagem) {
-    let texto = mensagem.replaceAll(/a/gi, 'ai')
+    let texto = mensagem
         .replaceAll(/e/gi, 'enter')
         .replaceAll(/i/gi, 'imes')
+        .replaceAll(/a/gi, 'ai')
         .replaceAll(/o/gi, 'ober')
         .replaceAll(/u/gi, 'ufat')
     return texto;
@@ -31,9 +32,10 @@ function criptografa(mensagem) {
 // Função para descriptografar texto
 
 function descriptografa(mensagem) {
-    let textoDescrip = mensagem.replaceAll(/ai/gi, 'a')
+    let textoDescrip = mensagem
         .replaceAll(/enter/gi, 'e')
         .replaceAll(/imes/gi, 'i')
+        .replaceAll(/ai/gi, 'a')
         .replaceAll(/ober/gi, 'o')
         .replaceAll(/ufat/gi, 'u')
     return textoDescrip;
