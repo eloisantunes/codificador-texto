@@ -7,7 +7,7 @@ let mensagem = document.querySelector("#mensagem")
 cripto.addEventListener('click', clickCripto);
 descripto.addEventListener('click', clickDescripto);
 copia.addEventListener('click', clickCop);
-const regex = new RegExp("^[a-z 0-9/^$]");
+//const regex = new RegExp("^[a-z 0-9/^$]");
 
 // Função para criptografar texto
 
@@ -33,7 +33,7 @@ function descriptografa(mensagem) {
 
 function caracteres(mensagem) {
     if (!regex.test(mensagem)) {
-        return
+        return ""
     } else {
         return mensagem
     }
