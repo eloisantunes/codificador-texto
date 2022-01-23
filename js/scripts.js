@@ -7,7 +7,15 @@ let mensagem = document.querySelector("#mensagem")
 cripto.addEventListener('click', clickCripto);
 descripto.addEventListener('click', clickDescripto);
 copia.addEventListener('click', clickCop);
-//const regex = new RegExp("^[a-z 0-9/^$]");
+
+mensagem.addEventListener('keypress', function(e){
+
+    const keyCode = (e.keyCode ? e.keyCode : e.wich);
+
+    if(keyCode > 47 && keyCode < 58){
+        e.preventDefault();
+    }
+});
 
 // Função para criptografar texto
 
@@ -32,10 +40,10 @@ function descriptografa(mensagem) {
 }
 
 function caracteres(mensagem) {
-    if (!regex.test(mensagem)) {
-        return ""
+    if (!regex.texto(mensagem)) {
+        alert("Caracter inválido!")
     } else {
-        return mensagem
+        return mensagem;
     }
 }
 
