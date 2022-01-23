@@ -3,4 +3,4 @@ Objetivo: Desenvolver um codificador de mensagens com as opções de Criptografa
 de letras maiúsculas, números e símbolos.
 #challengeonelogicabr
 
-![encrypt-msg](https://user-images.githubusercontent.com/81815496/150696112-0baf7dcc-d751-4912-a2e9-ef0c8e003f22.png)
+![codificador-text](https://user-images.githubusercontent.com/81815496/150697652-b7b63aeb-9175-4689-9c52-a1ed3bc111a2.png)
