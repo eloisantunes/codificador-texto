@@ -1,4 +1,4 @@
-# Challenge Alura - ONE / Lógica de Programação
+# Challenge Alura_ONE / Lógica de Programação
 Objetivo: Desenvolver um codificador de mensagens com as opções de Criptografar, Descriptografar e Copiar texto, com regras que limitam o uso 
 de letras maiúsculas, números e símbolos.
 #challengeonelogicabr
