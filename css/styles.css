@@ -20,8 +20,10 @@ body{
 
 .container{
     background-color: rgba(201, 201, 201, 0.533);
-    margin-top: 30px;
-    margin-left: 35%;
+    margin: auto;
+    position: absolute;
+    top: 12%;
+    left: 35%;
     width: 400px;
     height: 500px;
     box-sizing: border-box;
@@ -63,4 +65,11 @@ textarea{
     border-radius: 10px;
     margin-top: 1rem;
     width: 80%;
+}
+
+h1,h2 {
+    color: rgb(82, 82, 82);
+    font-weight: 800;
+    letter-spacing: 2px;
+   
 }
