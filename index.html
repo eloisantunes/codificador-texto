@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagem Secreta</title>
+</head>
+
+<body>
+
+    <!--- Input para entrada de texto --->
+
+    <main class="container">
+        <form action="">
+            <h1>Conte o seu segredo</h1>
+            <div class="input-field">
+                <textarea type="text" id="mensagem" placeholder="Digite seu texto"></textarea><br>
+                <label for="input-texto" id="label-text">Apenas letras minúsculas e sem acento</label>
+
+                <!--- Botões para criptografar/descriptografar o texto --->
+
+                <button id="btn-crip" class="btn">Criptografar</button>
+                <button id="btn-descrip" class="btn">Descriptografar</button>
+            </div>
+        </form>
+
+        <!--- Input com a mensagem criptografada --->
+
+        <div class="input-result">
+            <h2>Mensagem criptografada</h2>
+            <textarea type="text" id="resposta"></textarea>
+
+            <!--- Botão para copiar a mensagem gerada --->
+
+            <button id="btn-copiar" class="btn">Copiar</button>
+
+        </div>
+
+        <!--- Informações da desenvolvedora --->
+
+        <footer id="footer">
+            <a href="https://github.com/eloisantunes" target="_blank">
+                <button class="btn-git"><img class=icon src="img/github.png" width="50" height="45"
+                        title="GitHub" /></button></a>
+            <a href="https://www.linkedin.com/in/eloisa-antunes" target="_blank">
+                <button class="btn-lkn"><img class=icon src="img/linkedin.png" width="50" height="45"
+                        title="Linkedin" /></button></a>
+
+            <p>Desenvolvido por Eloísa Antunes &copy; 2022</p>
+
+        </footer>
+
+    </main>
+
+    <!--- scripts --->
+
+    <script type="text/javascript" src="js/scripts.js"></script>
+
+</body>
+
+</html>
