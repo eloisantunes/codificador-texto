@@ -8,7 +8,8 @@ cripto.addEventListener('click', clickCripto);
 descripto.addEventListener('click', clickDescripto);
 copia.addEventListener('click', clickCop);
 
-mensagem.addEventListener('keypress', function(e){
+mensagem.addEventListener('keypress', function(e)
+{
 
     const keyCode = (e.keyCode ? e.keyCode : e.wich);
 
@@ -19,7 +20,8 @@ mensagem.addEventListener('keypress', function(e){
 
 // Função para criptografar texto
 
-function criptografa(mensagem) {
+function criptografa(mensagem) 
+{
     let texto = mensagem
         .replaceAll(/e/gi, 'enter')
         .replaceAll(/i/gi, 'imes')
@@ -31,7 +33,8 @@ function criptografa(mensagem) {
 
 // Função para descriptografar texto
 
-function descriptografa(mensagem) {
+function descriptografa(mensagem) 
+{
     let textoDescrip = mensagem
         .replaceAll(/enter/gi, 'e')
         .replaceAll(/imes/gi, 'i')
@@ -41,7 +44,8 @@ function descriptografa(mensagem) {
     return textoDescrip;
 }
 
-function caracteres(mensagem) {
+function caracteres(mensagem) 
+{
     if (!regex.texto(mensagem)) {
         alert("Caracter inválido!")
     } else {
@@ -49,19 +53,22 @@ function caracteres(mensagem) {
     }
 }
 
-function clickDescripto() {
+function clickDescripto() 
+{
     const saveInput = mensagem.value;
     resposta.value = descriptografa(saveInput);
     mensagem.value = '';
 }
 
-function clickCripto() {
+function clickCripto() 
+{
     const saveInput = mensagem.value;
     resposta.value = criptografa(saveInput);
     mensagem.value = '';
 }
 
-function clickCop() {
+function clickCop() 
+{
     resposta.select();
     resposta.setSelectionRange(0, 99999);
     navigator.clipboard.writeText(resposta.value);
